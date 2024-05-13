@@ -1,6 +1,6 @@
 <?php
     include("sessoes.php");
-    include("tvcorpinc/tvcorpinc.php");
+    include("tvcorpinc/tvcorpconnect.php");
     include("connect.php");
     include("funcoes.php");
     

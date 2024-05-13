@@ -1,4 +1,4 @@
 <?php
-    include("tvcorpinc/tvcorpinc.php");
+    include("tvcorpinc/tvcorpconnect.php");
     AppConnect('app');
 ?>
