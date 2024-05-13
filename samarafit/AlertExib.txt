@@ -1,0 +1,1 @@
+update exibicoes set alerta = '1' where codigo in(35273,36449)

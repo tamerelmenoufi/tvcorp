@@ -1,0 +1,1 @@
+update exibicoes set alerta = '1' where dia = 'qui' and tipo = 'produto' and cod = '2312381' and estacao = '45'	and alerta != '1' and (NOW() between data_inicial and data_final)

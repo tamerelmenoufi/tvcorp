@@ -1,0 +1,3 @@
+Vez:1
+Exibicoes:2333491,2333493
+Comparacao: 2 = 2

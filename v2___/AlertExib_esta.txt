@@ -1,0 +1,1 @@
+select * from produto where situacao = 'liberado' and (NOW() between data_inicial and data_final) and ( posicao = '5'  or codigo in(15) ) order by nivel desc, codigo asc
