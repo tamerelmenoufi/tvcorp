@@ -2,7 +2,7 @@
     include("../includes/includes.php");
     
     if($_POST[chave]){
-        $query = "select * from estacoes where chave = '".$_POST[chave]."' and situacao = 'liberado'";
+        $query = "select * from estacoes where chave = '".$_POST[chave]."'";
         $result = mysql_query($query);
         if(mysql_num_rows($result)){
             $d = mysql_fetch_object($result);
