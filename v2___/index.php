@@ -248,7 +248,7 @@
                 
                  setInterval(function(){ 
                     n = $("marquee").attr('n');
-                    console.log(n)
+                    // console.log(n)
                     $.ajax({
                         url:"avisos.php",
                         type:"GET",
