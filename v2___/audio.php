@@ -24,7 +24,7 @@
     
 ?>
 
-<audio id="TempoAudio" autoplay="autoplay" controls="controls" preload="auto" style="opacity:0">
+<audio id="TempoAudio" autoplay="autoplay" controls="controls" preload="auto" style="position:fixed; left:-10000px; top:-10000px;">
     <source src="../painel/audios/audios/<?=$d->url?>" type="audio/mp3" />
 </audio>
 <div msg_audio style="position:absolute; padding:20px; border-radius:10px; background-color:#eee; color:#333; text-align:center; left:20px; top:10px; width:auto; font-size:20px; z-index:100;"><b><i class="fa fa-volume-up" aria-hidden="true"></i> <?=utf8_encode($d->titulo)?></b></div>
