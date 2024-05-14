@@ -7,4 +7,5 @@
     $md5 = md5(date("dmYHis"));
     
     $AppUrl = 'http://tvcorp.mohatron.com/';
+    $urlPainel = 'http://tvcorp.mohatron.com/';
 ?>

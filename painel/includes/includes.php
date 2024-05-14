@@ -15,6 +15,4 @@
 
     $urlPainel = "http://tvcorp.mohatron.com.br/";
     
-    
-    
 ?>
