@@ -5,13 +5,13 @@
             mysql_query("DELETE FROM `exibicoes`");
 
             // Alimentação das exibições /////////////////////////
-            $gnd = "select dias_semana, estacoes, data_inicial, data_final from aviso where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
+            $gnd = "select codigo, dias_semana, estacoes, data_inicial, data_final from aviso where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
             $gndr = mysql_query($gnd);
             
             if(mysql_num_rows($gndr)){
             
                 while($x = mysql_fetch_row($gndr)){
-                    list($dias, $estacoes, $data_inicial, $data_final) = $x;
+                    list($cod, $dias, $estacoes, $data_inicial, $data_final) = $x;
             
                     // mysql_query("DELETE FROM `exibicoes` where tipo = 'aviso'");
                     
@@ -54,13 +54,13 @@
 
             // Alimentação das exibições /////////////////////////
             ////////////////////////////////////////NOVA VERSÃO /////////////////////////////////////////////////
-            $gnd = "select dias_semana, estacoes, data_inicial, data_final from audios where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
+            $gnd = "select codigo, dias_semana, estacoes, data_inicial, data_final from audios where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
             $gndr = mysql_query($gnd);
             
             if(mysql_num_rows($gndr)){
 
                 while($x = mysql_fetch_row($gndr)){
-                    list($dias, $estacoes, $data_inicial, $data_final) = $x;
+                    list($cod, $dias, $estacoes, $data_inicial, $data_final) = $x;
             
                     // mysql_query("DELETE FROM `exibicoes` where tipo = 'audio' and cod = '".$cod."'");
                     
@@ -106,14 +106,14 @@
             // Alimentação das exibições /////////////////////////
 
 
-            $gnd = "select dias_semana, estacoes, data_inicial, data_final from produto where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
+            $gnd = "select codigo, dias_semana, estacoes, data_inicial, data_final from produto where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
             $gndr = mysql_query($gnd);
             
             if(mysql_num_rows($gndr)){
 
                 while($x = mysql_fetch_row($gndr)){
 
-                    list($dias, $estacoes, $data_inicial, $data_final) = $x;
+                    list($cod, $dias, $estacoes, $data_inicial, $data_final) = $x;
             
                     // mysql_query("DELETE FROM `exibicoes` where tipo = 'produto' and cod = '".$cod."'");
                     
