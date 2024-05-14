@@ -2,6 +2,8 @@
 
         include("../painel/includes/connect.php");
 
+            mysql_query("DELETE FROM `exibicoes`");
+
             // Alimentação das exibições /////////////////////////
             $gnd = "select dias_semana, estacoes, data_inicial, data_final from aviso where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
             $gndr = mysql_query($gnd);
@@ -11,7 +13,7 @@
                 while($x = mysql_fetch_row($gndr)){
                     list($dias, $estacoes, $data_inicial, $data_final) = $x;
             
-                    mysql_query("DELETE FROM `exibicoes` where tipo = 'aviso' and cod = '".$cod."'");
+                    // mysql_query("DELETE FROM `exibicoes` where tipo = 'aviso'");
                     
                     //list($a1,$m1,$d1) = explode("-",date("Y-m-d"));
                     list($a2,$m2,$d2) = explode("-",date("Y-m-d"));
@@ -60,7 +62,7 @@
                 while($x = mysql_fetch_row($gndr)){
                     list($dias, $estacoes, $data_inicial, $data_final) = $x;
             
-                    mysql_query("DELETE FROM `exibicoes` where tipo = 'audio' and cod = '".$cod."'");
+                    // mysql_query("DELETE FROM `exibicoes` where tipo = 'audio' and cod = '".$cod."'");
                     
                     //list($a1,$m1,$d1) = explode("-",date("Y-m-d"));
                     list($a2,$m2,$d2) = explode("-",date("Y-m-d"));
@@ -113,7 +115,7 @@
 
                     list($dias, $estacoes, $data_inicial, $data_final) = $x;
             
-                    mysql_query("DELETE FROM `exibicoes` where tipo = 'produto' and cod = '".$cod."'");
+                    // mysql_query("DELETE FROM `exibicoes` where tipo = 'produto' and cod = '".$cod."'");
                     
                     //list($a1,$m1,$d1) = explode("-",date("Y-m-d"));
                     list($a2,$m2,$d2) = explode("-",date("Y-m-d"));
