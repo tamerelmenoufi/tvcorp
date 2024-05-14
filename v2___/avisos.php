@@ -32,7 +32,7 @@
 
 ?>
 
-<marquee n='<?=$n?>'><?=$n?><?=$avisos?></marquee>
+<marquee n='<?=$n?>'><?=$avisos?></marquee>
 <script>
     $(function(){
 
