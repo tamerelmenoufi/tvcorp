@@ -13,6 +13,6 @@
     
     $ConfPermissoes = explode(",",$Conf->permissoes);
 
-    $urlPainel = "http://tvcorp.mohatron.com.br/painel/";
+    $urlPainel = "http://tvcorp.mohatron.com/painel/";
     
 ?>
