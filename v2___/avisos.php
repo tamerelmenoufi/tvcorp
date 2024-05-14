@@ -22,7 +22,7 @@
             echo 's';
             
         }
-        exit();
+        // exit();
     // }
     
     while($d = mysql_fetch_object($result)){
