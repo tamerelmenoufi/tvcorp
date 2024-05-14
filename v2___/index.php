@@ -248,6 +248,7 @@
                 
                  setInterval(function(){ 
                     n = $("marquee").attr('n');
+                    console.log(n)
                     $.ajax({
                         url:"avisos.php",
                         type:"GET",
@@ -256,7 +257,7 @@
                           musashi_tv_estacao:musashi_tv_estacao,
                         },
                         success:function(dados){
-                        console.log(dados)
+                        // console.log(dados)
                             if(dados == 's' || dados == '0'){
                                 $.ajax({
                                     url:"avisos.php",
