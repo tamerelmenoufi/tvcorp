@@ -106,7 +106,7 @@
             // Alimentação das exibições /////////////////////////
 
 
-            $gnd = "select dias_semana, estacoes, data_inicial, data_final from produto where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
+            echo $gnd = "select dias_semana, estacoes, data_inicial, data_final from produto where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
             $gndr = mysql_query($gnd);
             
             if(mysql_num_rows($gndr)){
