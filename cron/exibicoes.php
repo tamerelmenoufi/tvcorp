@@ -106,7 +106,7 @@
             // Alimentação das exibições /////////////////////////
 
 
-            echo $gnd = "select dias_semana, estacoes, data_inicial, data_final from produto where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
+            $gnd = "select dias_semana, estacoes, data_inicial, data_final from produto where (NOW() between data_inicial and data_final) and situacao = 'liberado'";
             $gndr = mysql_query($gnd);
             
             if(mysql_num_rows($gndr)){
@@ -132,7 +132,7 @@
                             if($e[$i]){
                                 for($j=0;$j<count($d);$j++){
                                     if($d[$j]){
-                                        $q = "select * from horarios where tipo = 'produto' and cod = '".$cod."' and dia = '".$d[$j]."' order by inicio";
+                                        echo $q = "select * from horarios where tipo = 'produto' and cod = '".$cod."' and dia = '".$d[$j]."' order by inicio";
                                         $r = mysql_query($q);
                                         while($t = mysql_fetch_object($r)){
                                             //	tipo 	cod 	estacao 	dia 	data_inicial 	data_final 	situacao
