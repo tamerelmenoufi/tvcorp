@@ -13,17 +13,17 @@
     }
 
     
-    echo $query = "select * from aviso where  situacao='liberado' and (NOW() between data_inicial and data_final) and codigo in(".implode(",",$Exb).") order by data_inicial desc";
+    $query = "select * from aviso where  situacao='liberado' and (NOW() between data_inicial and data_final) and codigo in(".implode(",",$Exb).") order by data_inicial desc";
     $result = mysql_query($query);
     $n = mysql_num_rows($result);
     
-    if($_GET[n]){
+    // if($_GET[n]){
         if($n != $_GET[n]){
             echo 's';
             
         }
         exit();
-    }
+    // }
     
     while($d = mysql_fetch_object($result)){
         $avs[] = utf8_encode($d->aviso);
