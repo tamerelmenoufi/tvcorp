@@ -12,6 +12,8 @@
     $Conf = mysql_fetch_object($result);
     
     $ConfPermissoes = explode(",",$Conf->permissoes);
+
+    $urlPainel = "http://tvcorp.mohatron.com.br/";
     
     
     
