@@ -257,7 +257,7 @@
                         },
                         success:function(dados){
                         console.log(dados)
-                            if(dados == 's'){
+                            if(dados == 's' || dados == '0'){
                                 $.ajax({
                                     url:"avisos.php",
                                     success:function(dados){
