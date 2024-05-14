@@ -17,13 +17,13 @@
     $result = mysql_query($query);
     $n = mysql_num_rows($result);
     
-    // if($_GET[n]){
+    if($_GET[n]){
         if($n != $_GET[n]){
             echo 's';
             
         }
-        // exit();
-    // }
+        exit();
+    }
     
     while($d = mysql_fetch_object($result)){
         $avs[] = utf8_encode($d->aviso);
