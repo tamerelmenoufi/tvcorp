@@ -21,7 +21,7 @@
     <center><i informacoes class="fa fa-info-circle fa-3x" style="color:#fff; cursor:pointer"></i></center>    
 </div>
 <div class="col-md-2">
-    <center><img src="img/mohatron.png" style="height:35px;" /></center>    
+    <center><img src="img/logom.png" style="height:35px;" /></center>    
 </div>
 </div>
 
